@@ -1,75 +1,68 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body{
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  color : #444 ;
-}
-
-nav{
-    font-size: 20px;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 32px;
-}
-
-h1{
-    font-size: 52px;
-    margin-bottom: 32px;
-}
-
-p{
-    font-size: 20px;
-    line-height: 1.6;
-    margin-bottom: 48px;
-}
-
-.btn:link,.btn:visited{
-    font-size: 20px;
-    font-weight: bold;
-    background-color: #e67e22;
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    padding: 16px 32px;
-    border-radius: 9px;
-}
-
-h2{
-    font-size: 44px;
-}
-
-section{
-    padding: 96px 0;
-}
-
-.container{
-    margin: 0 auto;
-    width: 1200px;
-}
-
-header{
-    color: #fff;
+    font-family: sans-serif;
+    color: #444;
+    font-size: 24px;
     height: 100vh;
-    position: relative;
-    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),url('./images/hero.jpg');
-    background-size: cover;
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+    text-align: center;
+    font-weight: bold;
 }
-
-.header-container{
-    width: 1200px;
-    position: absolute;
-    left : 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+nav,section,aside,main{
+    padding-top: 24px;
 }
-
-.header-container-inner{
-    width: 50%;
+nav{
+    background-color: #343a40;
+    color: white;
+    grid-row: 1/-1;
+}
+menu{
+    display: flex;
+    gap: 10px;
+    background-color: #7048e8;
+    color: white;
+    grid-column: 2/-1;
+    align-items: center;
+    padding: 0 40px;
+}
+section{
+    background-color: #e9ecef;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll;
+}
+aside{
+    background-color: #e9ecef;
+}
+button{
+    color: #fff;
+    font-size: 16px;
+    background-color: #5f3dc4;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block; 
+}
+button:last-child{
+    background-color: red;
+    margin-left: auto;
+}
+.email{
+    background-color: #adb5bd;
+    height: 96px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
 }
