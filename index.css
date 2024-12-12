@@ -24,6 +24,7 @@ body{
     gap: 9.6rem;
     margin: 0 auto;
     align-items: center;
+    padding: 0 3rem;
 }
 .hero-img{
     width: 100%;
@@ -94,4 +95,43 @@ body{
 .delivered-text span{
     color : #cf711f;
     font-weight: 700;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#fdf2e9;
+    height: 6rem;
+    padding: 0 4.8rem;
+}
+.logo{
+    height: 2rem;
+}
+.main-nav-list{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    align-items: center;
+}
+.main-nav-link:link,.main-nav-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 2s;
+}
+.main-nav-link:hover,.main-nav-link:active{
+    cursor: pointer;
+    color: #cf711f;
+    font-size: 1.52rem;
+}
+.nav-cta:link,.nav-cta:visited{
+    background-color:#e67e22;
+    color: white;
+    padding: 1rem 1.7rem;
+    border-radius: 10px;
+}
+.main-nav-link.nav-cta:hover,.main-nav-link.nav-cta:active{
+    background-color: #cf711f;
 }
