@@ -148,6 +148,7 @@ body{
 }
 .grid--3-cols{
     grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
 }
 .grid--4-cols{
     grid-template-columns: repeat(4,1fr);
@@ -254,4 +255,105 @@ body{
     height: 3rem;
     filter: brightness(0);
     opacity: 50%;
+}
+.section-meals{
+    padding: 5rem 0;
+}
+.meals-image{
+    width: 100%;
+}
+.meals-title{
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 3.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.meal-lists{
+    list-style: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.meal-list{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+.meal-icons{
+    font-size: 2rem;
+    color: #e67e22;
+}
+.tag{
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #51cf66;
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.meal-card-shadow{
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+    transition: all 0.4s;   
+}
+.meal-card-shadow:hover{
+    transform: translateY(-1rem);
+}
+.meal-content{
+    padding: 3rem 4rem 4rem 4rem;
+}
+#vegan{
+    background-color: #ffd43b;
+}
+.diet-lists{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.diet-list{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.diet-heading{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+.checkmarkicons{
+    font-size: 2rem;
+    color: #e67e22;
+}
+.all-recipes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.margin-bottom-md{
+    margin-bottom: 4.8rem;
+}
+.link:link,.link:visited{
+    display: inline-block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #cf711f;
+    border-bottom: 1px solid currentColor;
+    padding: 1.3rem;
+    transition: all 0.5s;
+}
+.link:hover,.link:active{
+    color: #e67e22;
+    border-bottom: 1px solid transparent;
+}
+.center-text{
+    text-align: center;
 }
