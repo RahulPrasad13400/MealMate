@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; /* ithupole kodukan nokanam then rem vech whole page adjust cheyan pattum (better to like this for the responsiveness of the image) */
 }
 
 body{
@@ -27,7 +27,7 @@ body{
     padding: 0 3rem;
 }
 .hero-img{
-    width: 100%;
+    width: 100%; /* grid vech cheyumbo 100% widht koduth nokka 1st then adjust cheyuth nokiya mathi */
 }
 .heading-primary{
     font-size: 5.2rem;
@@ -64,7 +64,7 @@ body{
 .btn-right:hover,.btn-right:active{
      background-color: #fdf2e9;
      color: #555;
-     box-shadow:inset 0 0 0 3px #fff;
+     box-shadow:inset 0 0 0 3px #fff; /* to create inner shadow for the box(like a border-radius) */
 }
 .margin-right-sm{
     margin-right : 1rem !important;
@@ -253,7 +253,7 @@ body{
 }
 .logos img{
     height: 3rem;
-    filter: brightness(0);
+    filter: brightness(0); /* to reduce the brigtness of the image */
     opacity: 50%;
 }
 .section-meals{
@@ -342,7 +342,7 @@ body{
     margin-bottom: 4.8rem;
 }
 .link:link,.link:visited{
-    display: inline-block;
+    display: inline-block; /* we always need to change the anchor element to inline-block when we are styling the element */
     font-size: 1.8rem;
     text-decoration: none;
     color: #cf711f;
@@ -356,4 +356,113 @@ body{
 }
 .center-text{
     text-align: center;
+}
+.section-testimonials{
+    background-color: #fdf2e9;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    align-items: center;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 7rem;
+}
+.testimonial-image{
+    width: 6.4rem;
+    border-radius: 50%;
+}
+.testimonial-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
+}
+.testimonial-name{
+    font-size: 1.6rem;
+    color: #777;
+}
+.testimonial-gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;
+    padding: 1.6rem;
+}
+.gallery-item{
+    overflow: hidden; /* a box inte purathekk image varand irikan vendi (aa box inte ullil thane aa image oru zooming effect create cheyyum) */
+}
+.gallery-item img{
+    display: block;
+    width: 100%;
+    transition: all 0.5s;
+}
+.gallery-item img:hover{
+    transform: scale(1.1); /* to make a bulging effect when we are hovering the image (like a zoom effect) */
+}
+#testimo{
+    padding: 9rem 0;
+    margin: 0 9rem;
+}
+.pricing-plan{
+    border-radius: 11px;
+    width: 75%;
+    padding: 5rem;
+}
+#pricing-gap{
+    gap: 10rem;
+    margin-bottom: 9rem;
+}
+.plan-name{
+    color: #cf711f;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    margin-bottom: 1rem;
+}
+.plan-price{
+    font-size: 7rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+.plan-price span{
+    margin-right : 1rem;
+}
+.plan-text{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.section-pricing{
+    margin: 9rem 0;
+}
+.pricing-planConainer{
+text-align: center;
+margin-bottom: 4.5rem;
+}
+.sign-up{
+    margin-top: 4.5rem;
+    text-align: center;
+}
+.pricing-plan--starter{
+    justify-self: end; /* to align the element to the right side of the grid box */
+    border: 3px solid #fdf2e9;
+}
+.pricing-plan-complete{
+    background-color: #fdf2e9;
+    position: relative;
+    overflow: hidden; /* to cut of the remaining portions of best value tag */
+}
+.pricing-plan-complete::before{
+    content: "Best value";
+    position: absolute;
+    top: 2%;
+    right: -13%;  /* we have to give the value in percentage because of the responsiveness issuses that can occur */
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background-color: #ffd43b;
+    color: #333;
+    padding: 1.8rem 4.2rem;
+    transform: rotate(45deg); /* to rotate the text value tag to 45 degree */
 }
