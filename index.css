@@ -161,7 +161,7 @@ body{
     padding: 1rem;
 }
 .container{
-    max-width: 120rem;
+    max-width: 120rem;  /*its a nice trick to center elements*/
     margin: 0 auto;
     padding: 0 3rem;
 }
@@ -465,4 +465,91 @@ margin-bottom: 4.5rem;
     color: #333;
     padding: 1.8rem 4.2rem;
     transform: rotate(45deg); /* to rotate the text value tag to 45 degree */
+}
+.feature-icon{
+    color: #e67e22;
+    background-color: #fdf2e9;
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-bottom: 1.6rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+}
+.feature-title{
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1.6rem;
+}
+.feature-gap{
+    gap: 6rem;
+}
+.feature-text{
+    font-size: 1.8rem;
+    color: #555;
+    line-height: 1.8;
+}
+.plan-details{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.callToAction{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 50rem;
+    background-color: #e67e22;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+}
+.callToAction-textBox{
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.callToAction-imgBox{
+    width: 100%;
+    background-image: linear-gradient(to right bottom, hsla(28, 80%, 61%, 0.234), hsla(28, 80%, 52%, 0.267)), url('./images/eating.jpg'); /*To set a backgroung image and make it almost the same color as the background*/
+    background-size: cover; /*to adjust the size of the background image*/
+    background-position: center;
+}
+
+.callToAction-textBox .heading-secondary{
+    color: #2e1907;
+}
+.callToAction-textBox .callToAction-text{
+    color: #2e1907;
+    font-size: 1.8rem;
+    margin-bottom: 4.8rem;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+    column-gap: 3.2rem ;
+}
+.form label{
+    font-size: 1.6rem;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 1.8rem;
+}   
+.form input{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+.form select{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+.form button{
+    width: 100%;
+    height: 4rem;
+    font-size: 1.6rem;
+    /* padding: 1.2rem; */
+    border-radius: 10px
 }
