@@ -509,6 +509,7 @@ margin-bottom: 4.5rem;
     background-color: #e67e22;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    margin-bottom: 9rem;
 }
 .callToAction-textBox{
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
@@ -574,4 +575,65 @@ margin-bottom: 4.5rem;
 .btn-form:hover{
     background-color: #fff;
     color: #555;
+}
+.grid-5-cols{
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+    gap: 6rem;
+}
+.footer{
+    padding: 12.8rem 0;
+    border-top: 1px solid #ede4e4 ;
+}
+.footer-heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 3.2rem;
+}
+.footer-nav{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.footer-nav a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #777;
+    transition: all 0.3s;
+
+}
+.social-links{
+    margin-top: 3.2rem;
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+    margin-bottom: 3.2rem;
+
+}
+.social-links a{
+    text-decoration: none;
+    color: #e67e22;
+    font-size: 1.6rem;
+}
+.social-links ion-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+.footer-nav a:hover{
+    color: #333;
+}
+.footer-copyright{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #777;
+}
+address{
+    font-size: 1.6rem;
+    color: #777;
+    line-height: 1.6;
+    font-style: normal;
+}
+.contacts a{
+    color: #777;
+    text-decoration: none;
 }
