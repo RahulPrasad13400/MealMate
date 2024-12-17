@@ -32,3 +32,124 @@ html{
     margin: 0 4rem;
 }
 }
+@media(max-width: 60em){
+    html{
+        font-size : 48%;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+        max-width: 90em;
+        gap: 4.3em;
+
+    }
+    .hero-img{
+        width: 60%;
+    }
+    .hero-text-box{
+        text-align: center;
+    }
+    .hero-img-box{
+        text-align: center;
+    }
+    .delivered-meals{
+        justify-content: center;
+        margin-top: 4em;
+    }
+    .hero-description{
+        margin-bottom: 2em;
+    }
+    .logos img{
+        height: 2.2em;
+    }
+    .step-number{
+        font-size: 5em;
+    }
+    .step-description{
+        font-size: 1.7em;
+        font-weight: 400;
+    }
+    .meal-content{
+    padding: 2em 2em 2em 2em;
+    }
+    .meals-title{
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    }
+    .tag{
+    font-size: 0.8em;
+    }
+    .section-testimonials{
+    grid-template-columns: 1fr;
+    }
+    .gallery-item img{
+    width: 100%;
+    }
+    .testimonial-gallery{
+    grid-template-columns: repeat(6,1fr);
+    }
+    .callToAction{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+@media(max-width: 50em){
+    .form{
+        grid-template-columns: 1fr;
+        row-gap: 1.5em;
+    }
+    .callToAction-textBox .callToAction-text{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    .heading-secondary{
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom: 1em;
+    }
+    .form label{
+        margin-bottom: 0.5em;
+    }     
+    .footer-nav a{
+    font-size: 1.3rem;
+    } 
+    address{
+        font-size: 1.3rem;
+    }
+    .btn-mobile-nav{
+        display: block ;
+    }
+    .main-nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255, 0.97);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        opacity: 0; /* display : none enn kodutal transitions work avula so opacity : 0 enn kodukunath ane better for showcasing transitions */ 
+        pointer-events: none; /* even aa element hidden anengi kude aa element aa page il indavum so ingane set cheyutha keyboard and mouse vech unaccessible akan pattum */
+        visibility: hidden; /* hiding from screen readers */
+        transform:translateX(100%) ;
+    }
+    .main-nav-list{
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    .main-nav-link:link,.main-nav-link:visited{
+        font-size: 3rem;
+    }
+    .nav-open .main-nav{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+    .nav-open .icon-mobile-nav[name="close-circle-outline"]{
+        display: block;
+    }
+    .nav-open .icon-mobile-nav[name="grid-outline"]{
+        display: none;
+    }
+}
