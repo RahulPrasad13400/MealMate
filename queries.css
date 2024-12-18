@@ -145,11 +145,41 @@ html{
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
+        transform: translateX(0);
     }
     .nav-open .icon-mobile-nav[name="close-circle-outline"]{
         display: block;
     }
     .nav-open .icon-mobile-nav[name="grid-outline"]{
         display: none;
+    }
+    .pricing-plan{
+        width: 100%;
+    }
+}
+
+@media(max-width : 44em){
+    .grid--3-cols{
+        grid-template-columns: repeat(2,1fr);
+        gap: 5rem;
+    }
+    .grid--4-cols{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .diets{
+        grid-column: 1/-1; /*To make the diet container to occupy the full width ( 1 / -1) and to make it center*/
+        justify-self: center;
+    }
+    .grid-5-cols{
+        grid-template-columns: repeat(6,1fr);
+        gap: 6rem;
+    }
+    .logo-col, .address-col{
+        grid-row: 2;
+        grid-column:span 3 ; /*6 ayitt split cheyuthitt enitt 3 vech randinum divide cheyuth kodukkum*/
+    }
+    .nav-col{
+        grid-row: 1;
+        grid-column: span 2;
     }
 }
