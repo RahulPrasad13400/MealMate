@@ -9,6 +9,7 @@
 html{
     font-size: 62.5%; /* ithupole kodukan nokanam then rem vech whole page adjust cheyan pattum (better to like this for the responsiveness of the image) */
     overflow-x: hidden; /*for the animation of nav in the mobile resolution(right side il ninn page ilott varunna effect in vendi transform vech aa page right side ilott vekkum enitt aa axis il ulla overflow hiden cheyyum) */
+    scroll-behavior: smooth; /*For smooth scrolling between pages*/
 }
 
 body{
@@ -652,4 +653,17 @@ address{
 }
 .icon-mobile-nav[name="close-circle-outline"]{
     display: none;
+}
+.sticky .header{
+    position: fixed; /*To make the navigation fixed*/
+    z-index: 999999;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.sticky .section-hero{
+    margin-top: 6rem;
 }
